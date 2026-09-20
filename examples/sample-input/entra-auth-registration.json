@@ -1,0 +1,68 @@
+﻿[
+    {
+        "Id":  "11111111-1111-1111-1111-111111111111",
+        "DisplayName":  "Alex Morgan",
+        "UserPrincipalName":  "alex.morgan@contoso-lab.example",
+        "UserType":  "Member",
+        "AccountEnabled":  true,
+        "IsMfaRegistered":  false,
+        "IsMfaCapable":  false,
+        "IsPasswordlessCapable":  false,
+        "MethodsRegistered":  [
+                                  "password"
+                              ]
+    },
+    {
+        "Id":  "22222222-2222-2222-2222-222222222222",
+        "DisplayName":  "Jordan Lee",
+        "UserPrincipalName":  "jordan.lee@contoso-lab.example",
+        "UserType":  "Member",
+        "AccountEnabled":  false,
+        "IsMfaRegistered":  false,
+        "IsMfaCapable":  false,
+        "IsPasswordlessCapable":  false,
+        "MethodsRegistered":  [
+                                  "password"
+                              ]
+    },
+    {
+        "Id":  "33333333-3333-3333-3333-333333333333",
+        "DisplayName":  "Taylor Smith",
+        "UserPrincipalName":  "taylor.smith@contoso-lab.example",
+        "UserType":  "Member",
+        "AccountEnabled":  true,
+        "IsMfaRegistered":  true,
+        "IsMfaCapable":  true,
+        "IsPasswordlessCapable":  true,
+        "MethodsRegistered":  [
+                                  "microsoftAuthenticatorPush",
+                                  "windowsHelloForBusiness"
+                              ]
+    },
+    {
+        "Id":  "44444444-4444-4444-4444-444444444444",
+        "DisplayName":  "External Consultant",
+        "UserPrincipalName":  "consultant_external#EXT#@contoso-lab.example",
+        "UserType":  "Guest",
+        "AccountEnabled":  true,
+        "IsMfaRegistered":  true,
+        "IsMfaCapable":  true,
+        "IsPasswordlessCapable":  false,
+        "MethodsRegistered":  [
+                                  "microsoftAuthenticatorPush"
+                              ]
+    },
+    {
+        "Id":  "55555555-5555-5555-5555-555555555555",
+        "DisplayName":  "Former Contractor",
+        "UserPrincipalName":  "former.contractor#EXT#@contoso-lab.example",
+        "UserType":  "Guest",
+        "AccountEnabled":  false,
+        "IsMfaRegistered":  false,
+        "IsMfaCapable":  false,
+        "IsPasswordlessCapable":  false,
+        "MethodsRegistered":  [
+                                  "password"
+                              ]
+    }
+]

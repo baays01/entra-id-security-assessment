@@ -1,0 +1,113 @@
+﻿{
+    "SchemaVersion":  "1.0",
+    "Project":  "Microsoft Entra ID Security Assessment",
+    "FindingStatuses":  [
+                            "PASS",
+                            "REVIEW",
+                            "WARNING",
+                            "INFORMATIONAL",
+                            "NOT ASSESSED"
+                        ],
+    "Rules":  [
+                  {
+                      "Id":  "ENTRA-PRIV-001",
+                      "Domain":  "Privileged Role Exposure",
+                      "Name":  "Privileged Role Inventory",
+                      "Description":  "Inventory active privileged Microsoft Entra directory role assignments.",
+                      "Enabled":  true,
+                      "DefaultStatus":  "INFORMATIONAL",
+                      "DataSource":  "Microsoft Graph",
+                      "ReadOnly":  true
+                  },
+                  {
+                      "Id":  "ENTRA-PRIV-002",
+                      "Domain":  "Privileged Role Exposure",
+                      "Name":  "Guest Privileged Identity Review",
+                      "Description":  "Identify guest or external identities holding privileged directory roles.",
+                      "Enabled":  true,
+                      "DefaultStatus":  "REVIEW",
+                      "DataSource":  "Microsoft Graph",
+                      "ReadOnly":  true
+                  },
+                  {
+                      "Id":  "ENTRA-AUTH-001",
+                      "Domain":  "Authentication and MFA Posture",
+                      "Name":  "MFA Registration Review",
+                      "Description":  "Review available MFA registration information for enabled user accounts.",
+                      "Enabled":  true,
+                      "DefaultStatus":  "REVIEW",
+                      "DataSource":  "Microsoft Graph",
+                      "ReadOnly":  true
+                  },
+                  {
+                      "Id":  "ENTRA-CA-001",
+                      "Domain":  "Conditional Access",
+                      "Name":  "Conditional Access Policy Inventory",
+                      "Description":  "Inventory enabled, report-only, and disabled Conditional Access policies.",
+                      "Enabled":  true,
+                      "DefaultStatus":  "INFORMATIONAL",
+                      "DataSource":  "Microsoft Graph",
+                      "ReadOnly":  true
+                  },
+                  {
+                      "Id":  "ENTRA-CA-002",
+                      "Domain":  "Conditional Access",
+                      "Name":  "Conditional Access Exclusion Review",
+                      "Description":  "Identify user, group, or role exclusions requiring administrative review.",
+                      "Enabled":  true,
+                      "DefaultStatus":  "REVIEW",
+                      "DataSource":  "Microsoft Graph",
+                      "ReadOnly":  true
+                  },
+                  {
+                      "Id":  "ENTRA-ACCT-001",
+                      "Domain":  "Account Hygiene",
+                      "Name":  "Disabled Account Inventory",
+                      "Description":  "Inventory disabled Microsoft Entra user accounts.",
+                      "Enabled":  true,
+                      "DefaultStatus":  "INFORMATIONAL",
+                      "DataSource":  "Microsoft Graph",
+                      "ReadOnly":  true
+                  },
+                  {
+                      "Id":  "ENTRA-GUEST-001",
+                      "Domain":  "External Identities",
+                      "Name":  "Guest Account Inventory",
+                      "Description":  "Inventory Microsoft Entra guest identities for ownership and lifecycle review.",
+                      "Enabled":  true,
+                      "DefaultStatus":  "INFORMATIONAL",
+                      "DataSource":  "Microsoft Graph",
+                      "ReadOnly":  true
+                  },
+                  {
+                      "Id":  "ENTRA-APP-001",
+                      "Domain":  "Application and Service Principal Posture",
+                      "Name":  "Application Registration Inventory",
+                      "Description":  "Inventory application registrations where assessment permissions allow.",
+                      "Enabled":  true,
+                      "DefaultStatus":  "INFORMATIONAL",
+                      "DataSource":  "Microsoft Graph",
+                      "ReadOnly":  true
+                  },
+                  {
+                      "Id":  "ENTRA-APP-002",
+                      "Domain":  "Application and Service Principal Posture",
+                      "Name":  "Application Credential Expiration Review",
+                      "Description":  "Identify application credentials approaching or exceeding expiration.",
+                      "Enabled":  true,
+                      "DefaultStatus":  "WARNING",
+                      "DataSource":  "Microsoft Graph",
+                      "ReadOnly":  true
+                  },
+                  {
+                      "Id":  "ENTRA-RISK-001",
+                      "Domain":  "Identity Risk Indicators",
+                      "Name":  "Identity Risk Review",
+                      "Description":  "Review identity-risk information when licensing and permissions make the data available.",
+                      "Enabled":  false,
+                      "DefaultStatus":  "NOT ASSESSED",
+                      "DataSource":  "Microsoft Graph",
+                      "ReadOnly":  true
+                  }
+              ]
+}

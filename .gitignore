@@ -1,0 +1,62 @@
+# =========================================================
+# Microsoft Entra ID Security Assessment
+# Public Repository Safety Exclusions
+# =========================================================
+
+# Real assessment output must remain local
+/reports/
+/output/
+/exports/
+/assessment-output/
+/tenant-data/
+/live-data/
+/private-data/
+
+# Environment and secret files
+.env
+.env.*
+*.secret
+*.secrets
+*.key
+*.pem
+*.pfx
+*.p12
+*.jks
+*.keystore
+
+# Authentication / token artifacts
+*token*.json
+*token*.txt
+*access-token*
+*refresh-token*
+*credentials*.json
+*credential-cache*
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.bak
+*.old
+*.cache
+
+# PowerShell temporary / local artifacts
+*.clixml
+*.xml.local
+
+# Editor / IDE metadata
+.vscode/
+.idea/
+*.code-workspace
+
+# Operating-system metadata
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# =========================================================
+# IMPORTANT
+# examples/sample-input and examples/sample-output are
+# intentionally committed because they contain only
+# fictional / sanitized portfolio data.
+# =========================================================

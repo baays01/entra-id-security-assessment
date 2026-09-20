@@ -1,0 +1,2 @@
+"RuleId","Domain","FindingName","Status","RecordCount","PopulationCount","Summary","Evidence","Source","ReadOnly"
+"ENTRA-AUTH-001","Authentication and MFA Posture","MFA Registration Review","REVIEW","1","3","1 of 3 enabled identity(ies) are not registered for MFA and require review.","Alex Morgan [alex.morgan@contoso-lab.example]","Normalized Authentication Registration Inventory","True"

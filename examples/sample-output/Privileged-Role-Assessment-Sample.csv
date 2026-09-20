@@ -1,0 +1,3 @@
+"RuleId","Domain","FindingName","Status","RecordCount","Summary","Evidence","Source","ReadOnly"
+"ENTRA-PRIV-001","Privileged Role Exposure","Privileged Role Inventory","INFORMATIONAL","3","3 privileged role assignment(s) identified: 2 active and 1 eligible.","Taylor Smith [Global Administrator - Active]; Alex Morgan [Global Reader - Eligible]; External Consultant [User Administrator - Active]","Normalized Privileged Role Inventory","True"
+"ENTRA-PRIV-002","Privileged Role Exposure","Guest Privileged Identity Review","REVIEW","1","1 guest or external privileged assignment(s) require administrative review.","External Consultant [User Administrator - Active]","Normalized Privileged Role Inventory","True"

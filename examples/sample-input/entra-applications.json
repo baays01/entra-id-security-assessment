@@ -1,0 +1,101 @@
+﻿{
+    "AssessmentReferenceDate":  "2026-09-19T00:00:00Z",
+    "CredentialWarningDays":  30,
+    "Applications":  [
+                         {
+                             "Id":  "app11111-1111-1111-1111-111111111111",
+                             "AppId":  "a1111111-1111-1111-1111-111111111111",
+                             "DisplayName":  "Finance Reporting Portal",
+                             "SignInAudience":  "AzureADMyOrg",
+                             "PublisherDomain":  "contoso-lab.example",
+                             "Owners":  [
+                                            "app.owner01@contoso-lab.example",
+                                            "security.owner@contoso-lab.example"
+                                        ],
+                             "PasswordCredentials":  [
+                                                         {
+                                                             "KeyId":  "cred1111-1111-1111-1111-111111111111",
+                                                             "DisplayName":  "Finance Reporting Secret",
+                                                             "StartDateTime":  "2026-01-01T00:00:00Z",
+                                                             "EndDateTime":  "2026-12-31T23:59:59Z"
+                                                         }
+                                                     ],
+                             "KeyCredentials":  [
+
+                                                ],
+                             "ServicePrincipalPresent":  true,
+                             "ServicePrincipalId":  "sp111111-1111-1111-1111-111111111111"
+                         },
+                         {
+                             "Id":  "app22222-2222-2222-2222-222222222222",
+                             "AppId":  "a2222222-2222-2222-2222-222222222222",
+                             "DisplayName":  "Operations Automation Worker",
+                             "SignInAudience":  "AzureADMyOrg",
+                             "PublisherDomain":  "contoso-lab.example",
+                             "Owners":  [
+                                            "automation.owner@contoso-lab.example"
+                                        ],
+                             "PasswordCredentials":  [
+                                                         {
+                                                             "KeyId":  "cred2222-2222-2222-2222-222222222222",
+                                                             "DisplayName":  "Automation Client Secret",
+                                                             "StartDateTime":  "2026-04-01T00:00:00Z",
+                                                             "EndDateTime":  "2026-10-05T23:59:59Z"
+                                                         }
+                                                     ],
+                             "KeyCredentials":  [
+
+                                                ],
+                             "ServicePrincipalPresent":  true,
+                             "ServicePrincipalId":  "sp222222-2222-2222-2222-222222222222"
+                         },
+                         {
+                             "Id":  "app33333-3333-3333-3333-333333333333",
+                             "AppId":  "a3333333-3333-3333-3333-333333333333",
+                             "DisplayName":  "Legacy Integration App",
+                             "SignInAudience":  "AzureADMyOrg",
+                             "PublisherDomain":  "contoso-lab.example",
+                             "Owners":  [
+
+                                        ],
+                             "PasswordCredentials":  [
+                                                         {
+                                                             "KeyId":  "cred3333-3333-3333-3333-333333333333",
+                                                             "DisplayName":  "Legacy Integration Secret",
+                                                             "StartDateTime":  "2025-09-01T00:00:00Z",
+                                                             "EndDateTime":  "2026-08-31T23:59:59Z"
+                                                         }
+                                                     ],
+                             "KeyCredentials":  [
+
+                                                ],
+                             "ServicePrincipalPresent":  true,
+                             "ServicePrincipalId":  "sp333333-3333-3333-3333-333333333333"
+                         },
+                         {
+                             "Id":  "app44444-4444-4444-4444-444444444444",
+                             "AppId":  "a4444444-4444-4444-4444-444444444444",
+                             "DisplayName":  "Certificate Service Connector",
+                             "SignInAudience":  "AzureADMyOrg",
+                             "PublisherDomain":  "contoso-lab.example",
+                             "Owners":  [
+                                            "platform.owner@contoso-lab.example"
+                                        ],
+                             "PasswordCredentials":  [
+
+                                                     ],
+                             "KeyCredentials":  [
+                                                    {
+                                                        "KeyId":  "cert4444-4444-4444-4444-444444444444",
+                                                        "DisplayName":  "Service Authentication Certificate",
+                                                        "Type":  "AsymmetricX509Cert",
+                                                        "Usage":  "Verify",
+                                                        "StartDateTime":  "2026-09-01T00:00:00Z",
+                                                        "EndDateTime":  "2027-09-30T23:59:59Z"
+                                                    }
+                                                ],
+                             "ServicePrincipalPresent":  true,
+                             "ServicePrincipalId":  "sp444444-4444-4444-4444-444444444444"
+                         }
+                     ]
+}

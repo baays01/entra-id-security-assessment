@@ -1,0 +1,3 @@
+"RuleId","Domain","FindingName","Status","RecordCount","Summary","Evidence","Source","ReadOnly"
+"ENTRA-ACCT-001","Account Hygiene","Disabled Account Inventory","INFORMATIONAL","2","2 disabled account(s) identified for lifecycle review.","Jordan Lee; Former Contractor","Normalized Entra User Inventory","True"
+"ENTRA-GUEST-001","External Identities","Guest Account Inventory","INFORMATIONAL","2","2 guest account(s) identified for ownership and lifecycle review.","External Consultant; Former Contractor","Normalized Entra User Inventory","True"
